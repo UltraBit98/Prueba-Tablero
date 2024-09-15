@@ -14,7 +14,7 @@ proyectos = {}
 historial_cambios = []
 
 # Función para autenticarse y abrir la hoja de cálculo
-@st.experimental_singleton
+@st.cache_resource
 def conectar_google_sheet():
     # Definir el alcance de la API
     scope = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
