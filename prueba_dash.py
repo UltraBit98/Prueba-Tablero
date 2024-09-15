@@ -1,4 +1,8 @@
 # app.py
+
+import os
+os.environ["STREAMLIT_PAGES_WATCH_COMPLETE"] = "false"
+import streamlit as st
 import streamlit as st
 
 st.set_option('server.fileWatcherType', 'none')
